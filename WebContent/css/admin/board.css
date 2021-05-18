@@ -1,0 +1,12 @@
+/* -------359px 미만일 때-------- */
+@media screen and (max-width: 359px){
+    .first-btn, .main, .last-btn{
+        margin:0px;
+    }
+}
+
+.card-title input[type=text]{
+    font-size:15px;
+    padding-left:10px;
+    border-radius:5px;
+}

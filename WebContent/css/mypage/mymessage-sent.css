@@ -1,0 +1,125 @@
+ul{
+    list-style: none;
+}
+
+/*----제목----*/
+
+.title .big-title{
+    text-align: center;
+}
+
+/* -----btn-list------ */
+.btn-list{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:10px;
+
+    display:flex;
+
+    width: 300px;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.message-side{
+    display:none;
+}
+/* -----aside----- */
+@media screen and (min-width: 650px){
+    .message-main{
+    }
+        .message-side{
+            display:initial;
+            position:absolute;
+            left:30px;
+            background-color: white;
+            border: solid 1px #DCDCDC;
+            border-radius:20px;
+            width: 20%;
+            padding: 20px 0px;
+            font-size:14px;
+        }
+        .message-side a{
+            
+                color:#646464;
+                display:flex;
+                padding: 20px;
+                justify-content: center;
+            }
+
+        .message-side a:hover{
+            color: var(--primary-color);
+        }
+    .btn-list div:nth-child(2){
+        display:none;
+    }
+    .btn-list{
+        justify-content:flex-end;
+    }
+}
+
+/* --------main section--------- */
+.main-button{
+    display:flex;
+    height:auto;
+    margin-bottom:40px;
+    flex-flow: column;
+    align-items: center;
+}
+
+.main-button .message-wrapper{
+    width:300px;
+    height:auto;
+  
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    margin: 5px 20px;
+    padding: 13px 10px;
+    position: relative;
+
+    transition: all 0.4s;
+}
+.message-wrapper:hover{
+    border:1px solid var(--primary-color);
+}
+.message-wrapper{
+    display: flex;
+}
+
+.read{
+    color:var(--secondary-color);
+    font-weight:900;
+    font-size: 9px;
+    align-self: center;
+}
+.message-content{
+    width: 222px;
+    padding-left:10px;
+}
+.message-content>li {
+    text-align: left;
+    padding-bottom:5px;
+}
+
+.message-content .sender{
+    font-size:14px;
+}
+
+.message-content .preview{
+    font-size:16px;
+    width:230px;
+}
+
+.message-content .date{
+    font-size:9px;
+}
+.message-wrapper .message-check{
+    position: absolute;
+    right:12px;
+}
+.btn-list{
+    padding-right:10px;
+}
